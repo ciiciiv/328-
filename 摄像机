@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class shexiang : MonoBehaviour {
+	
+	//放到摄像机上  (如果想你让摄像机跟随物体移动的话)再说
+		void Update()
+		{
+			float hor = Input.GetAxis("Horizontal");
+			//float ver = Input.GetAxis("Vertical");
+			transform.position += new Vector3(hor*3, 0, 0 );
+		}
+
+		
+	}
+
+
+	
